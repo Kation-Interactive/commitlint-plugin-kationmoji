@@ -1,0 +1,34 @@
+{
+  "name": "commitlint-plugin-kationmoji",
+  "version": "1.0.0",
+  "description": "shareable commitlint config enforcing gitmoji commit message",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "build": "npx swc ./src/index.js -d ./lib"
+  },
+  "homepage": "https://github.com/Kation-Interactive/commitlint-plugin-kationmoji",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kation-Interactive/commitlint-plugin-kationmoji.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "commitlint",
+    "commitlintplugin",
+    "emoji",
+    "commit",
+    "git"
+  ],
+  "author": "RBoraurito <ricardoboraure@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "emoji-name-map": "^1.2.9"
+  }
+}
